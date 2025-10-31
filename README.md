@@ -1,21 +1,29 @@
-# Astro ML Pipeline Demo
+# 🚀 Astro ML Pipeline Demo
 
-**Author:** Kuldeep Pawar / Sudeep (replace with preferred name)  
-**Repo:** <your-github-link>
+An end-to-end **Machine Learning pipeline for astronomical data** — built with Python, DVC, MLflow, and Airflow-ready structure.  
+This project demonstrates how to automate data preparation, model training, experiment tracking, and model comparison.
 
-## Summary
+---
 
-This project demonstrates an end-to-end ML pipeline for astronomical data:
+## 🌌 Project Overview
 
-- Data preprocessing
-- Training & comparing multiple models (LinearRegression, DecisionTree, RandomForest)
-- Tracking experiments and models with MLflow (local server)
-- Automatic selection and registration of the best model into MLflow Model Registry
+| Stage | Description |
+|--------|--------------|
+| **1. Data Pipeline** | Generates and preprocesses synthetic astronomical data for regression tasks. |
+| **2. Model Training** | Trains baseline models (Linear Regression, Decision Tree, Random Forest). |
+| **3. Experiment Tracking** | Logs metrics, parameters, and artifacts with **MLflow**. |
+| **4. Model Comparison** | Compares models using R² and MSE, visualized in MLflow UI. |
+| **5. Auto-Registration** | Automatically registers the best model in the MLflow Model Registry. |
 
-## Quickstart (Windows / Git Bash)
+---
 
-1. Activate venv:
+## 🧠 Tech Stack
 
-```bash
-source venv/Scripts/activate
-```
+- **Python 3.11+**
+- **MLflow** — experiment tracking & model registry  
+- **scikit-learn** — machine learning models  
+- **pandas**, **numpy**, **matplotlib** — data handling  
+- *(Optional)* **Airflow / DVC** — for pipeline orchestration & version control
+
+---
+
