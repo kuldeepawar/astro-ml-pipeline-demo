@@ -1,49 +1,91 @@
 # 🚀 Astro ML Pipeline Demo
 
-An end-to-end **Machine Learning pipeline for astronomical data** — built with Python, DVC, MLflow, and Airflow-ready structure.  
-This project demonstrates how to automate data preparation, model training, experiment tracking, and model comparison.
+**Author:** Kuldeep Pawar  
+**Email:** [kuldeepawar01@gmail.com]  
+**GitHub:** [https://github.com/kuldeepawar/astro-ml-pipeline-demo](https://github.com/kuldeepawar/astro-ml-pipeline-demo)
 
 ---
 
-## 🌌 Project Overview
+## 🧠 Overview
+This project demonstrates an **end-to-end Machine Learning pipeline** for astronomical data using **Python, MLflow, and Airflow-style modularization**.
 
-| Stage | Description |
-|--------|--------------|
-| **1. Data Pipeline** | Generates and preprocesses synthetic astronomical data for regression tasks. |
-| **2. Model Training** | Trains baseline models (Linear Regression, Decision Tree, Random Forest). |
-| **3. Experiment Tracking** | Logs metrics, parameters, and artifacts with **MLflow**. |
-| **4. Model Comparison** | Compares models using R² and MSE, visualized in MLflow UI. |
-| **5. Auto-Registration** | Automatically registers the best model in the MLflow Model Registry. |
-
----
-
-## 🧠 Tech Stack
-
-- **Python 3.11+**
-- **MLflow** — experiment tracking & model registry  
-- **scikit-learn** — machine learning models  
-- **pandas**, **numpy**, **matplotlib** — data handling  
-- *(Optional)* **Airflow / DVC** — for pipeline orchestration & version control
+It covers:
+- Data ingestion & preprocessing
+- Model training, comparison, and selection
+- Experiment tracking with MLflow
+- Model registry automation (best model auto-registration)
+- Reproducibility via environment & version control
 
 ---
 
-source venv/Scripts/activate
-pip install -r requirements.txt
-python src/model_compare_pipeline.py
-python src/auto_register_best.py
-python -m mlflow ui --backend-store-uri ./mlruns --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000
-# Open http://localhost:5000
+## ⚙️ Tech Stack
+- **Language:** Python 3.10+
+- **ML Frameworks:** scikit-learn, pandas, numpy
+- **MLOps Tools:** MLflow, DVC, Git
+- **Pipeline Scripts:** Modular `src/` folder
+- **Visualization:** Jupyter notebooks
+
+---
+
+## 🧩 Project Structure
+
+astro-ml-pipeline-demo/
+├── src/
+│ ├── data_pipeline.py
+│ ├── model_pipeline.py
+│ ├── model_compare_pipeline.py
+│ └── auto_register_best.py
+├── notebooks/
+│ └── exploratory_analysis.ipynb
+├── docs/
+│ ├── pipeline_design.md
+│ └── data_description.md
+├── scripts/
+│ └── generate_sample_data.py
+├── requirements.txt
+└── README.md
 
 
-## 📊 MLflow Experiment Tracking
+---
 
-Below is the MLflow dashboard showing multiple tracked experiments during model training and comparison.
+## 📊 MLflow Integration
+MLflow tracks every model training run, records metrics, and manages model registry.
 
+**Experiment View:**
 ![MLflow Experiments](docs/images/mlflow_experiments.png)
 
-
-## 🧠 Registered Model in MLflow
+**Registered Model:**
 ![Registered Model](docs/images/mlflow_registered_model.png)
 
+---
+
+## 📦 Artifacts & Reproducibility
+All MLflow artifacts (`mlruns/`, `mlartifacts/`) are backed up separately in this release:  
+👉 [📁 Download Release: Astro ML Artifacts Backup](../../releases)
+
+---
+
+## 🧠 Key Features
+- Modular, reusable ML pipeline design
+- Automated model comparison and best-model registration
+- MLflow tracking & registry integration
+- Ready for scaling or Docker/Airflow integration
+
+---
+
+## 🧾 License
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 👥 Contributing
+Pull requests and feedback are welcome!
+
+---
+
+## 📄 Project Documentation
+See:
+- [`docs/pipeline_design.md`](docs/pipeline_design.md)
+- [`docs/data_description.md`](docs/data_description.md)
 
 
