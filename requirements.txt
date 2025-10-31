@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+mlflow
+dvc
+apache-airflow==2.6.3
+apache-airflow-providers-http
+apache-airflow-providers-postgres
+matplotlib
+astropy
+joblib
+fastparquet
