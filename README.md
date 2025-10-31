@@ -73,14 +73,6 @@ All MLflow artifacts (`mlruns/`, `mlartifacts/`) are backed up separately in thi
 
 ---
 
-## 🧾 License
-Licensed under the [MIT License](LICENSE).
-
----
-
-## 👥 Contributing
-Pull requests and feedback are welcome!
-
 ---
 
 ## 📄 Project Documentation
