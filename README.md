@@ -27,3 +27,11 @@ This project demonstrates how to automate data preparation, model training, expe
 
 ---
 
+source venv/Scripts/activate
+pip install -r requirements.txt
+python src/model_compare_pipeline.py
+python src/auto_register_best.py
+python -m mlflow ui --backend-store-uri ./mlruns --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000
+# Open http://localhost:5000
+
+
