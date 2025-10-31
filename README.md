@@ -35,3 +35,15 @@ python -m mlflow ui --backend-store-uri ./mlruns --default-artifact-root ./mlrun
 # Open http://localhost:5000
 
 
+## 📊 MLflow Experiment Tracking
+
+Below is the MLflow dashboard showing multiple tracked experiments during model training and comparison.
+
+![MLflow Experiments](docs/images/mlflow_experiments.png)
+
+
+## 🧠 Registered Model in MLflow
+![Registered Model](docs/images/mlflow_registered_model.png)
+
+
+
