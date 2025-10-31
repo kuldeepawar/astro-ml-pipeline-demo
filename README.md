@@ -55,7 +55,7 @@ MLflow tracks every model training run, records metrics, and manages model regis
 ![MLflow Experiments](https://github.com/kuldeepawar/astro-ml-pipeline-demo/blob/main/docs/mlflow_experiments.png.jpg)
 
 **Registered Model:**
-![Registered Model](docs/images/mlflow_registered_model.png)
+![Registered Model](https://github.com/kuldeepawar/astro-ml-pipeline-demo/blob/main/docs/mlflow_registered_model.png)
 
 ---
 
